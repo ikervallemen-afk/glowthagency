@@ -42,7 +42,7 @@ const HeroSection = () => (
         className="text-muted-foreground mb-2 flex items-center justify-center gap-2"
       >
         <Video className="h-4 w-4" />
-        Recibirás un vídeo personalizado de 12–15 min con diagnóstico real de tu clínica.
+        Recibirás un vídeo personalizado con diagnóstico real de tu clínica.
       </motion.p>
 
       <motion.p
