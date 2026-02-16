@@ -4,10 +4,7 @@ import { MotionSection, StaggerList, MotionItem, fadeUp, scaleUp } from "@/compo
 const items = [
   "Revisión de tu perfil en Instagram",
   "Revisión de tu ficha en Google",
-  "Análisis de tu oferta principal",
   "Identificación de 3 fugas de pacientes",
-  "1 mejora inmediata aplicable",
-  "1 idea de campaña que podrías lanzar esta semana",
 ];
 
 const ServiceSection = () => (
