@@ -1,4 +1,4 @@
-const CTA_URL = "#";
+const CTA_URL = "https://calendly.com/app/scheduling/meeting_types/user/me";
 
 const PriceSection = () => (
   <section className="py-20 md:py-28 bg-background">
