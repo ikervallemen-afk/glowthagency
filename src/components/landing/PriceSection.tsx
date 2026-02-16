@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MotionSection, scaleUp } from "@/components/motion/MotionWrappers";
 
-const CTA_URL = "https://calendly.com/app/scheduling/meeting_types/user/me";
+const CTA_URL = "https://buy.stripe.com/4gM7sK4eP7ZZ08bcANd3i00";
 
 const PriceSection = () => (
   <section className="py-20 md:py-28 bg-background">
