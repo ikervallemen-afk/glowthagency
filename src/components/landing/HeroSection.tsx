@@ -1,6 +1,6 @@
 import { Video } from "lucide-react";
 
-const CTA_URL = "#";
+const CTA_URL = "https://calendly.com/app/scheduling/meeting_types/user/me";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/30 py-20 md:py-32">
