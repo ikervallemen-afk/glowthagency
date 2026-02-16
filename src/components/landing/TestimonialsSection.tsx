@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import { MotionSection, StaggerList, MotionItem, scaleUp } from "@/components/motion/MotionWrappers";
 
 const testimonials = [
   {
@@ -32,59 +33,43 @@ const testimonials = [
 
 const TestimonialsSection = () => (
   <section className="py-20 md:py-28 bg-accent/20">
-    <div className="container mx-auto px-4 max-w-5xl fade-in-section">
-      <div className="text-center mb-14">
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-foreground">
-          Lo que dicen clínicas que ya hicieron{" "}
-          <span className="text-primary">su chequeo</span>
-        </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Resultados reales de profesionales que detectaron sus fugas y
-          actuaron.
-        </p>
-      </div>
+    <div className="container mx-auto px-4 max-w-5xl">
+      <MotionSection>
+        <div className="text-center mb-14">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Lo que dicen clínicas que ya hicieron{" "}
+            <span className="text-primary">su chequeo</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Resultados reales de profesionales que detectaron sus fugas y actuaron.
+          </p>
+        </div>
+      </MotionSection>
 
-      <div className="grid gap-8 md:grid-cols-3">
+      <StaggerList slow className="grid gap-8 md:grid-cols-3">
         {testimonials.map((t) => (
-          <div
+          <MotionItem
             key={t.name}
+            variants={scaleUp}
             className="relative rounded-2xl border border-border bg-card p-6 shadow-sm flex flex-col gap-4"
           >
-            {/* Quote icon */}
             <Quote className="h-8 w-8 text-primary/20 absolute top-4 right-4" />
-
-            {/* Stars */}
             <div className="flex gap-0.5">
               {Array.from({ length: t.stars }).map((_, i) => (
-                <Star
-                  key={i}
-                  className="h-4 w-4 fill-primary text-primary"
-                />
+                <Star key={i} className="h-4 w-4 fill-primary text-primary" />
               ))}
             </div>
-
-            {/* Testimonial text */}
-            <p className="text-muted-foreground text-sm leading-relaxed italic">
-              "{t.quote}"
-            </p>
-
-            {/* Result badge */}
+            <p className="text-muted-foreground text-sm leading-relaxed italic">"{t.quote}"</p>
             <span className="inline-block self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
               📈 {t.result}
             </span>
-
-            {/* Author */}
             <div className="mt-auto pt-4 border-t border-border">
-              <p className="font-semibold text-foreground text-sm">
-                {t.name}
-              </p>
-              <p className="text-xs text-muted-foreground">
-                {t.clinic} · {t.location}
-              </p>
+              <p className="font-semibold text-foreground text-sm">{t.name}</p>
+              <p className="text-xs text-muted-foreground">{t.clinic} · {t.location}</p>
             </div>
-          </div>
+          </MotionItem>
         ))}
-      </div>
+      </StaggerList>
     </div>
   </section>
 );

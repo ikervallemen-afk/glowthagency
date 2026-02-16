@@ -1,4 +1,5 @@
 import { ShoppingCart, Send, PlayCircle } from "lucide-react";
+import { MotionSection, StaggerList, MotionItem, scaleUp } from "@/components/motion/MotionWrappers";
 
 const steps = [
   {
@@ -23,14 +24,16 @@ const steps = [
 
 const ProcessSection = () => (
   <section className="py-20 md:py-28 bg-background">
-    <div className="container mx-auto px-4 max-w-4xl fade-in-section">
-      <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-14 text-foreground">
-        Así funciona
-      </h2>
+    <div className="container mx-auto px-4 max-w-4xl">
+      <MotionSection>
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-14 text-foreground">
+          Así funciona
+        </h2>
+      </MotionSection>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <StaggerList slow className="grid md:grid-cols-3 gap-8">
         {steps.map((step) => (
-          <div key={step.num} className="text-center">
+          <MotionItem key={step.num} variants={scaleUp} className="text-center">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10">
               <step.icon className="h-8 w-8 text-primary" />
             </div>
@@ -39,9 +42,9 @@ const ProcessSection = () => (
             </span>
             <h3 className="font-display text-xl font-bold text-foreground mb-2">{step.title}</h3>
             <p className="text-muted-foreground">{step.desc}</p>
-          </div>
+          </MotionItem>
         ))}
-      </div>
+      </StaggerList>
     </div>
   </section>
 );

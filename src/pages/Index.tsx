@@ -1,4 +1,3 @@
-import { useFadeIn } from "@/hooks/useFadeIn";
 import HeroSection from "@/components/landing/HeroSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import InsightSection from "@/components/landing/InsightSection";
@@ -10,23 +9,19 @@ import RiskSection from "@/components/landing/RiskSection";
 import ProcessSection from "@/components/landing/ProcessSection";
 import ClosingSection from "@/components/landing/ClosingSection";
 
-const Index = () => {
-  const ref = useFadeIn();
-
-  return (
-    <div ref={ref} className="min-h-screen">
-      <HeroSection />
-      <ProblemSection />
-      <InsightSection />
-      <ServiceSection />
-      <BonusSection />
-      <TestimonialsSection />
-      <PriceSection />
-      <RiskSection />
-      <ProcessSection />
-      <ClosingSection />
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen">
+    <HeroSection />
+    <ProblemSection />
+    <InsightSection />
+    <ServiceSection />
+    <BonusSection />
+    <TestimonialsSection />
+    <PriceSection />
+    <RiskSection />
+    <ProcessSection />
+    <ClosingSection />
+  </div>
+);
 
 export default Index;
