@@ -5,7 +5,7 @@ import UrgencyBanner from "./UrgencyBanner";
 const CTA_URL = "https://calendly.com/glowthagency0/30min";
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/30 py-20 md:py-32">
+  <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/30 pt-28 md:pt-40 py-20 md:py-32 scroll-mt-16">
     <div className="container mx-auto px-4 text-center max-w-3xl">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}

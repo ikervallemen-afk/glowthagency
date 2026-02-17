@@ -8,7 +8,7 @@ const items = [
 ];
 
 const ServiceSection = () => (
-  <section className="py-20 md:py-28 bg-background">
+  <section id="servicio" className="py-20 md:py-28 bg-background scroll-mt-16">
     <div className="container mx-auto px-4 max-w-3xl">
       <MotionSection>
         <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">

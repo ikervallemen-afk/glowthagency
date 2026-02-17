@@ -5,7 +5,7 @@ import UrgencyBanner from "./UrgencyBanner";
 const CTA_URL = "https://buy.stripe.com/4gM7sK4eP7ZZ08bcANd3i00";
 
 const PriceSection = () => (
-  <section className="py-20 md:py-28 bg-background">
+  <section id="precio" className="py-20 md:py-28 bg-background scroll-mt-16">
     <div className="container mx-auto px-4 max-w-2xl text-center">
       <MotionSection>
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
