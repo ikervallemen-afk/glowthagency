@@ -33,7 +33,7 @@ const HeroSection = () => (
         transition={{ duration: 0.6, delay: 0.35 }}
         className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
       >
-        En este <strong>Chequeo Express de Pacientes</strong> analizo tu captación actual y te explico qué está fallando y para solucionarlo esta misma semana.
+        En este <strong>Chequeo Express de Pacientes</strong> analizo tu captación actual y te explico qué está fallando para solucionarlo esta misma semana.
       </motion.p>
 
       <motion.p
