@@ -2,7 +2,7 @@ import { Video, BookOpen, Coins } from "lucide-react";
 import { motion } from "framer-motion";
 import { MotionSection, StaggerList, MotionItem, fadeUp } from "@/components/motion/MotionWrappers";
 
-const CTA_URL = "https://calendly.com/app/scheduling/meeting_types/user/me";
+const CTA_URL = "https://calendly.com/glowthagency0/30min";
 
 const ClosingSection = () => (
   <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 via-background to-accent/30">
