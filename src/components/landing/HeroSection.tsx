@@ -23,8 +23,8 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.15 }}
         className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-6"
       >
-        ¿Tu clínica podría estar{" "}
-        <span className="text-primary">perdiendo pacientes</span> cada semana sin que lo sepas?
+        Tu clínica podría estar{" "}
+        <span className="text-primary">perdiendo pacientes</span> cada semana sin que lo sepas
       </motion.h1>
 
       <motion.p
@@ -33,7 +33,7 @@ const HeroSection = () => (
         transition={{ duration: 0.6, delay: 0.35 }}
         className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
       >
-        En este <strong>Chequeo Express de Pacientes</strong> analizo tu captación actual y te explico qué está fallando y qué haría yo para conseguir más pacientes esta misma semana.
+        En este <strong>Chequeo Express de Pacientes</strong> analizo tu captación actual y te explico qué está fallando y para solucionarlo esta misma semana.
       </motion.p>
 
       <motion.p
