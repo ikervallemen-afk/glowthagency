@@ -9,6 +9,7 @@ import PriceSection from "@/components/landing/PriceSection";
 import RiskSection from "@/components/landing/RiskSection";
 import ProcessSection from "@/components/landing/ProcessSection";
 import ClosingSection from "@/components/landing/ClosingSection";
+import Footer from "@/components/landing/Footer";
 
 const Index = () => (
   <div className="min-h-screen">
@@ -23,6 +24,7 @@ const Index = () => (
     <RiskSection />
     <ProcessSection />
     <ClosingSection />
+    <Footer />
   </div>
 );
 
