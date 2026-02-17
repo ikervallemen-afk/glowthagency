@@ -1,6 +1,7 @@
 import { Video, BookOpen, Coins } from "lucide-react";
 import { motion } from "framer-motion";
 import { MotionSection, StaggerList, MotionItem, fadeUp } from "@/components/motion/MotionWrappers";
+import UrgencyBanner from "./UrgencyBanner";
 
 const CTA_URL = "https://calendly.com/glowthagency0/30min";
 
@@ -16,6 +17,8 @@ const ClosingSection = () => (
           Por <strong className="text-foreground">17€</strong>, puedes saberlo hoy y descubrir qué haría yo para solucionarlo.
         </p>
       </MotionSection>
+
+      <UrgencyBanner />
 
       <motion.a
         href={CTA_URL}

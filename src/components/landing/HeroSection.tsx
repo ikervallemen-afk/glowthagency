@@ -1,5 +1,6 @@
 import { Video } from "lucide-react";
 import { motion } from "framer-motion";
+import UrgencyBanner from "./UrgencyBanner";
 
 const CTA_URL = "https://calendly.com/glowthagency0/30min";
 
@@ -44,6 +45,15 @@ const HeroSection = () => (
         <Video className="h-4 w-4" />
         Recibirás un vídeo personalizado con diagnóstico real de tu clínica.
       </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.55 }}
+        className="flex justify-center"
+      >
+        <UrgencyBanner />
+      </motion.div>
 
       <motion.p
         initial={{ opacity: 0, scale: 0.9 }}
