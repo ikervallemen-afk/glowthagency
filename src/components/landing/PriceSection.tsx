@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MotionSection, scaleUp } from "@/components/motion/MotionWrappers";
+import UrgencyBanner from "./UrgencyBanner";
 
 const CTA_URL = "https://buy.stripe.com/4gM7sK4eP7ZZ08bcANd3i00";
 
@@ -24,6 +25,8 @@ const PriceSection = () => (
           <span className="text-primary text-5xl font-extrabold">17€</span>
         </p>
       </MotionSection>
+
+      <UrgencyBanner />
 
       <motion.a
         href={CTA_URL}
