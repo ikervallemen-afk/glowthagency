@@ -48,7 +48,7 @@ const Footer = () => (
             <li className="flex items-center gap-2">
               <Instagram className="h-4 w-4 text-primary" />
               <a
-                href="https://instagram.com/glowthagency"
+                href="https://instagram.com/glowthagency_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-foreground transition-colors"
