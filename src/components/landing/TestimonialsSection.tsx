@@ -32,7 +32,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-20 md:py-28 bg-accent/20">
+  <section id="testimonios" className="py-20 md:py-28 bg-accent/20 scroll-mt-16">
     <div className="container mx-auto px-4 max-w-5xl">
       <MotionSection>
         <div className="text-center mb-14">

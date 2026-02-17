@@ -10,7 +10,7 @@ const realProblems = [
 ];
 
 const InsightSection = () => (
-  <section className="py-20 md:py-28 bg-secondary/50">
+  <section id="insight" className="py-20 md:py-28 bg-secondary/50 scroll-mt-16">
     <div className="container mx-auto px-4 max-w-4xl">
       <MotionSection>
         <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
