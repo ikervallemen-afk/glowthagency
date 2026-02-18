@@ -54,7 +54,7 @@ const Footer = () => (
                 rel="noopener noreferrer"
                 className="hover:text-foreground transition-colors"
               >
-                @glowthagency
+                @glowthagency_
               </a>
             </li>
             <li className="flex items-center gap-2">
