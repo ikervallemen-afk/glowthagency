@@ -1,4 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="bg-secondary/80 border-t border-border py-12">
@@ -68,9 +69,9 @@ const Footer = () => (
       <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <p>© {new Date().getFullYear()} Glowth Agency. Todos los derechos reservados.</p>
         <div className="flex gap-4">
-          <a href="#" className="hover:text-foreground transition-colors">Aviso legal</a>
-          <a href="#" className="hover:text-foreground transition-colors">Política de privacidad</a>
-          <a href="#" className="hover:text-foreground transition-colors">Cookies</a>
+          <Link to="/aviso-legal" className="hover:text-foreground transition-colors">Aviso legal</Link>
+          <Link to="/politica-privacidad" className="hover:text-foreground transition-colors">Política de privacidad</Link>
+          <Link to="/politica-cookies" className="hover:text-foreground transition-colors">Cookies</Link>
         </div>
       </div>
     </div>
