@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MotionSection, StaggerList, MotionItem, fadeUp } from "@/components/motion/MotionWrappers";
 import UrgencyBanner from "./UrgencyBanner";
 
-const CTA_URL = "https://calendly.com/glowthagency0/30min";
+const CTA_URL = "https://buy.stripe.com/4gM7sK4eP7ZZ08bcANd3i00";
 
 const ClosingSection = () => (
   <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 via-background to-accent/30">

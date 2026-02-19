@@ -2,7 +2,7 @@ import { Video } from "lucide-react";
 import { motion } from "framer-motion";
 import UrgencyBanner from "./UrgencyBanner";
 
-const CTA_URL = "https://calendly.com/glowthagency0/30min";
+const CTA_URL = "https://buy.stripe.com/4gM7sK4eP7ZZ08bcANd3i00";
 
 const HeroSection = () => (
   <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/30 pt-28 md:pt-40 py-20 md:py-32 scroll-mt-16">
